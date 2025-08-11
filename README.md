@@ -18,6 +18,7 @@ Write the Windows commands / batch file . Save each script in a file with a .bat
 Execute the necessary commands/batch file for the desired output. 
 
 # WINDOWS COMMANDS:
+
 ## Exercise 1: Basic Directory and File Operations
 
 Create a directory named "MyLab" on the desktop.
@@ -71,12 +72,12 @@ mkdir %userprofile%\Desktop\Documents
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
 
 ## COMMAND
-
+```
 @echo off
 mkdir %userprofile%\Desktop\DocBackup
 copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
 echo Backup completed successfully!
-
+```
 ## OUTPUT
 
 <img width="957" height="247" alt="444063202-35d59cb9-4e09-468f-9c2a-78e990509a63" src="https://github.com/user-attachments/assets/b3d1eb64-6841-4bb7-9fdb-507bd853e37c" />
