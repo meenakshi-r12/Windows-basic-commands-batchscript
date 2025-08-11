@@ -17,49 +17,55 @@ Write the Windows commands / batch file . Save each script in a file with a .bat
 
 Execute the necessary commands/batch file for the desired output. 
 
-
-
-
 # WINDOWS COMMANDS:
 ## Exercise 1: Basic Directory and File Operations
-Create a directory named "my-folder"
+
+Create a directory named "MyLab" on the desktop.
 
 ## COMMAND AND OUTPUT
 
-Remove the directory "my-folder"
+mkdir %userprofile%\Desktop\MyLab
+
+<img width="707" height="51" alt="444061563-9115620f-1a86-4a2b-ae53-f0e1d26b359f" src="https://github.com/user-attachments/assets/0c9c9324-05cc-405c-955b-ff21302e1381" />
+
+Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
 
 ## COMMAND AND OUTPUT
 
+cd %userprofile%\Desktop\MyLab
 
-Create the file Rose.txt
+<img width="650" height="106" alt="444061887-ebd91539-0e28-43c6-9e87-ebb3f6e128c7" src="https://github.com/user-attachments/assets/652e58a3-0d0c-4860-bd09-21b8822040a3" />
+
+type nul > MyFile.txt
+
+<img width="650" height="106" alt="444061887-ebd91539-0e28-43c6-9e87-ebb3f6e128c7-1" src="https://github.com/user-attachments/assets/4f2d801c-ac83-4d66-aa6d-502f5ab2d1b3" />
+
+List the contents of the "MyLab" directory.
+## COMMAND AND OUTPUT
+
+dir %userprofile%\Desktop\MyLab
+
+<img width="815" height="321" alt="444062274-66e8c7bd-bab0-444c-8fd8-95fdcf3a71a6" src="https://github.com/user-attachments/assets/57e6e518-4128-4cf0-98ca-31fcda7e82bc" />
+
+Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
 
 ## COMMAND AND OUTPUT
 
+mkdir %userprofile%\Desktop\Backup
 
-Create the file hello.txt using echo and redirection
+<img width="800" height="102" alt="444062361-1b776f5d-2080-4771-8ba4-bf3bbe7ac7e0" src="https://github.com/user-attachments/assets/0abac2fe-9d52-4dda-b889-acea67ef404a" />
 
+copy MyFile.txt %userprofile%\Desktop\Backup
+
+<img width="925" height="143" alt="444062622-85d89d2c-6fcb-496c-b7ac-b9a2793122ca" src="https://github.com/user-attachments/assets/7faa6ecb-4baa-4347-b1fa-f103ecc1b5ae" />
+
+Move the "MyLab" directory to the "Documents" folder.
 ## COMMAND AND OUTPUT
 
-Copy the file hello.txt into the file hello1.txt
+mkdir %userprofile%\Desktop\Documents
 
-## COMMAND AND OUTPUT
+<img width="891" height="223" alt="444062770-5a779f09-d4eb-499e-8476-7a7cb18015aa" src="https://github.com/user-attachments/assets/869e25bb-b507-4a17-9ba4-2496a1c771e7" />
 
-Remove the file hello1.txt
-
-## COMMAND AND OUTPUT
-
-List out the file hello1.txt in the current directory
-
-## COMMAND AND OUTPUT
-
-List out all the associated file extensions 
-
-## COMMAND AND OUTPUT
-
-
-Compare the file hello.txt and rose.txt
-
-## COMMAND AND OUTPUT
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
